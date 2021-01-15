@@ -3,7 +3,7 @@ import datetime
 
 def getdate():
     import datetime
-    return datetime.datetime.now().strftime('%d/%m/%Y %I:%M:%S %p')
+    return datetime.datetime.now().strftime('%d/%m/%Y %I:%M %p')
 
 
 r_w = input(
@@ -18,8 +18,8 @@ if r_w == "w":
             f.write(getdate() + " : " + input("write down here: \n") + "\n")
 
     print(HMsys())
-    print(f"You have been logged {user_input}s {user_input2} routine at..")
-    print(getdate())
+    print(f"You have been logged {user_input}s {user_input2} routine at.." + getdate())
+    # print(getdate())
 
 
 
